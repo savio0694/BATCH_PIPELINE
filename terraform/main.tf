@@ -138,3 +138,38 @@ EOF
 
 
 
+resource "google_dataproc_cluster" "mycluster" {
+  name     = "mycluster"
+  region   = "us-central1"
+  graceful_decommission_timeout = "120s"
+  
+
+  cluster_config {
+    
+
+    master_config {
+      num_instances = 1
+      machine_type  = "e2-medium"
+      disk_config {
+        boot_disk_type    = "pd-ssd"
+        boot_disk_size_gb = 30
+      }
+    }
+
+    software_config {
+      image_version = "2.0.35-debian10"
+      override_properties = {
+        "dataproc:dataproc.allow.zero.workers" = "true"
+      }
+    }
+
+  
+
+    gce_cluster_config {
+      
+      # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
+      service_account = "airflowservice@finaldemo-349008.iam.gserviceaccount.com"
+     
+  }
+  }
+}
