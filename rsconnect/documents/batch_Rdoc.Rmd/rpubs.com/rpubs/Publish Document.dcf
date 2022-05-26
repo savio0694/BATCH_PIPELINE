@@ -1,0 +1,11 @@
+name: Publish Document
+title:
+username:
+account: rpubs
+server: rpubs.com
+hostUrl: rpubs.com
+appId: https://api.rpubs.com/api/v1/document/904490/a114e4e04ccc499baaa3c4a90127cbe4
+bundleId: https://api.rpubs.com/api/v1/document/904490/a114e4e04ccc499baaa3c4a90127cbe4
+url: http://rpubs.com/leander/904490
+when: 1653241090.82558
+lastSyncTime: 1653241090.82558

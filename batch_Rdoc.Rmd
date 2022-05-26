@@ -7,7 +7,7 @@ output:
   prettydoc::html_pretty:
     theme: leonids
 ---
-<img src="https://github.com/savio0694/BATCH_PIPELINE/blob/master/images/wallpaperbetter.com_1024x768.jpg?raw=true">
+<img src="images/dock.jpg">
 <br>
 
 
